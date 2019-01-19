@@ -1,7 +1,8 @@
 <?php 
 function deret_abjad($baris, $kolom) { 
 	$alphabet = 
-	[ 'a',
+	[ 'kosong',
+	  'a',
 	  'b',
 	  'c',
 	  'd',
@@ -32,11 +33,11 @@ function deret_abjad($baris, $kolom) {
 	// Menghitung jumlah array
 	$jumlah_alphabet = count($alphabet);
 
-	$sum = 0;
-	for ($i=0; $i <= $baris; $i++) { 
+	$sum = 1;
+	for ($i=1; $i <= $baris; $i++) { 
 		// Ini untuk rows atau baris
 		
-		for ($j=0; $j <= $kolom; $j++) { 
+		for ($j=1; $j <= $kolom; $j++) { 
 			// Ini untuk Column atau kolom
 		echo $alphabet[$sum];
 		$sum++;
