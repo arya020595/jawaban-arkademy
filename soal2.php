@@ -1,7 +1,7 @@
 <?php 
 
 function validasi($username, $password) {
-    if (preg_match("/[a-z][_]/", $username) AND strlen($username) == 8) 
+    if (preg_match('/^(?=.*[_])[a-z_]{8}$/', $username))
     {
         echo 'Username is true';
     }
@@ -19,6 +19,6 @@ function validasi($username, $password) {
     }
 }
 
-validasi('solo_aba', 'wsxE9##s');
+validasi('solo_abc', 'wsxE9##s');
 
 ?>
