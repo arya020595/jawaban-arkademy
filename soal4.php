@@ -29,10 +29,8 @@ function deret_abjad($baris, $kolom) {
 	  'y',
 	  'z' 
 	];		
-
 	// Menghitung jumlah array
 	$jumlah_alphabet = count($alphabet);
-
 	$sum = 1;
 	for ($i=1; $i <= $baris; $i++) { 
 		// Ini untuk rows atau baris
@@ -43,12 +41,9 @@ function deret_abjad($baris, $kolom) {
 		$sum++;
 		
 		}
-
 		echo '<br>';
 	}
 }
-
-deret_abjad(3, 4);	
-
+deret_abjad(4, 3);	
  
 ?>
